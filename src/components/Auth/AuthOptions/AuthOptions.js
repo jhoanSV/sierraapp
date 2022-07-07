@@ -7,7 +7,7 @@ export default function authOptions(props) {
 
   return (
     <div className='auth-options'>
-      <h2>Millones de canciones, gratis en musicfy</h2>
+      <h2>Tus aliados estrategicos</h2>
       <Button className='register' onClick={() => setSelectedForm("register")}>
         Registrate gratis
       </Button>
