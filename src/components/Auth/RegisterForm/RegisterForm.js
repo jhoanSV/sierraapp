@@ -82,6 +82,7 @@ export default function RegisterForm(props) {
   return (
     <div className='register-form'>
       <h1>Tus aliados estrategicos.</h1>
+
       <Form onSubmit={ onSubmit } onChange={ onChange }>
         <Form.Field>
           <Form.Input 
@@ -111,7 +112,7 @@ export default function RegisterForm(props) {
             }
             error={ formError.password }
           />
-        {formError.email && (
+        {formError.password && (
             <span className='error-text'>
               Introdusca una contraseña mayor a 6 digitos.
             </span>
@@ -125,7 +126,7 @@ export default function RegisterForm(props) {
             icon='user circle outline'
             error={ formError.Username }
           />
-           {formError.email && (
+           {formError.Username && (
             <span className='error-text'>
               Introdusca un usuario.
             </span>
